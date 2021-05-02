@@ -1,4 +1,4 @@
-package org.amazon.config;
+package utils;
 
 import java.io.FileReader;
 import java.util.Properties;

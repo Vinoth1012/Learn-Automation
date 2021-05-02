@@ -1,4 +1,4 @@
-package org.amazon.test;
+package test;
 
 import java.io.IOException;
 
