@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import test.TestRunner;
+import utils.Base;
 
-public class Homepage extends TestRunner {
+public class Homepage extends Base {
 	
 WebDriver driver;
 Select drpSearchCategory;
@@ -35,7 +35,7 @@ WebElement drpSearch;
 
 public Homepage(WebDriver driver)
 			{
-			this.driver = driver;
+			driver = Base.driver;
 			PageFactory.initElements(driver, this);
 	}
 
