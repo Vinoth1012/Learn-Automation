@@ -8,12 +8,11 @@ public class Config {
 	{  
 		String strPropertyValue = "";
 		try {
-			FileReader reader=new FileReader("D:\\Automation\\Workspace\\Amazon\\src\\test\\resources\\config\\config.properties");  
+			FileReader reader=new FileReader(System.getProperty("user.dir")+"\\src\\test\\resources\\config\\config.properties");  
 		    Properties p=new Properties();  
 		    p.load(reader);
 		    strPropertyValue = p.getProperty(strPropertyKey);
 		    reader.close();
-		   
 		}
 		catch(Exception e)
 			{

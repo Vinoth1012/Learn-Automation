@@ -6,7 +6,7 @@ Scenario: Title
     Then Homepage should be displayed
     When Search for the Product
     Then Search Results should be displayed 
-    And Close the application
+    And Close the browser
 
   #Scenario Outline: Title of your scenario outline
     #Given I want to write a step with <name>

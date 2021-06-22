@@ -21,10 +21,11 @@ public class Base{
 		utils.Base.test.log(LogStatus.PASS, "Application launched successfully");
 	}
 	
-	@Then("^Close the application$")
-	public void close_the_application() throws Throwable {
+	@Then("^Close the browser$")
+	public void close_the_browser() throws Throwable {
 		utils.Base base = new utils.Base();
 		base.closeBrowser();
+		utils.Base.test.log(LogStatus.PASS, "Browser closed successfully");
 	}
 
 }

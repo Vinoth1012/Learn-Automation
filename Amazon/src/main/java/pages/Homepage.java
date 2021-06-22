@@ -17,7 +17,7 @@ Select drpSearchCategory;
 @FindBy(xpath="//div/input[@id='twotabsearchtextbox']")
 WebElement inputSearch;
 
-@FindBy(xpath="//div//input[@id='nav-search-submit-button']")
+@FindBy(xpath="//div//input[@id='nav-search-submit-btton']")
 WebElement btnSearch;
 	
 @FindBy(xpath="//div[@role='alertdialog']")
@@ -39,10 +39,12 @@ public Homepage(WebDriver driver)
 			PageFactory.initElements(driver, this);
 	}
 
-public void isPageDisplayed()
+public void isPageDisplayed() throws Exception
 			{
 			if(btnSearch.isDisplayed())
-			System.out.println("Homepage displayed successfully");
+				System.out.println("Homepage displayed successfully");
+			else 
+				throw new Exception();
 	}
 
 public void enterDetails(String inputField, String inputValue) throws Exception 
