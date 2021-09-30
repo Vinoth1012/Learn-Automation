@@ -13,7 +13,6 @@ public class Homepage extends Base {
 	
 WebDriver driver;
 Select drpSearchCategory;
-
 @FindBy(xpath="//div/input[@id='twotabsearchtextbox']")
 WebElement inputSearch;
 
