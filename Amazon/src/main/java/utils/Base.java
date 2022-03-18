@@ -26,7 +26,7 @@ public class Base {
 			 report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReport\\ExtentReportResults.html");
 			 test = report.startTest("ExtentDemo");
 			 strBrowser = Config.readPropertyFile("Browser");
-			 
+// 			 test comment for gitmerge
 			 if(strBrowser.equalsIgnoreCase("Chrome"))
 			 {
 				 Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
